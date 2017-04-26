@@ -1,0 +1,54 @@
+.plan-selection {
+
+  .plans {
+    margin-bottom: 40px;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .button-bottom {
+    margin-top: 15px;
+  }
+
+  .label-select {
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+
+  .axa-label {
+    label {
+      font-weight: 600;
+      color: $primary-color !important;
+    }
+  }
+
+  .axa-label-small {
+    label {
+      font-size: 0.8em;
+      line-height: 22px;
+      font-weight: 600;
+      font-family: $primary-font;
+      color: $primary-color !important;
+    }
+  }
+
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .addon-wrapper {
+    padding: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-bottom: 50px;
+    overflow: hidden;
+
+    @media (max-width: $screen-sm) {
+      height: 300px;
+    }
+  }
+}

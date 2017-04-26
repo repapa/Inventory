@@ -1,0 +1,110 @@
+$black: #000;
+$white: #fff;
+$light-grey: #e3e3e3;
+
+$active: $primary-color;
+$completed: #0088ce;
+
+.p-bar {
+  margin-top: 20px;
+
+  .flat_travel {
+    text-align: center;
+    overflow: hidden;
+    background: transparent;
+    display: inline-block;
+    padding-right: 20px;
+
+    i {
+      margin-right: 5px;
+    }
+
+    a {
+      text-decoration: none;
+      outline: none;
+      display: block;
+      float: left;
+      font-size: 14px;
+      line-height: 36px;
+      padding: 0 10px 0 35px;
+      position: relative;
+
+      &:first-child {
+        padding-left: 14px;
+      }
+
+      &::before {
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin: 8px 0;
+        position: absolute;
+        top: 0;
+        left: 30px;
+        font-weight: bold;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -18px;
+        width: 36px;
+        height: 36px;
+        -webkit-transform: scale(0.707) rotate(45deg);
+        -ms-transform: scale(0.707) rotate(45deg);
+        transform: scale(0.707) rotate(45deg);
+        z-index: 1;
+        box-shadow: 2px -2px 0 2px $completed;
+        border-radius: 0 5px 0 50px;
+        box-shadow: 4px -4px 0 4px $white;
+        border-radius: 0 1px 0 50px;
+      }
+
+      &.disabled, &.disabled::after {
+        background: $light-grey;
+        color: $black;
+        cursor: not-allowed;
+      }
+
+      &.active, &.active::after {
+        background: $active;
+        color: $white;
+        cursor: default;
+      }
+
+      &.completed, &.completed::after {
+        background: $completed;
+        color: $white;
+        cursor: pointer;
+      }
+
+      &.completed_b, &.completed_b::after {
+        background: $completed;
+        color: $white;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .top-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+
+  .main-title {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+
+  .sub-title {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+
+}
+

@@ -1,0 +1,30 @@
+run_cmd:
+  - apt-get -y install software-properties-common python-software-properties wget libkrb5-dev make g++ curl
+  - wget -qO- https://deb.nodesource.com/setup_6.x | bash
+  - apt-get -y --force-yes install nodejs
+  - npm uninstall -g npm
+  - wget https://www.npmjs.com/install.sh
+  - chmod +x install.sh
+  - npm_install=3.9.6 ./install.sh; rm -rf /tmp/npm-*
+  - npm config set _auth bXctcHJvZHVjdGlvbjpBUEIxVWNQR1piZ3lERnlyeDRITlB3a1NxckM=
+  - npm config set always-auth true
+  - npm config set email noreply@axagroupsolutions.com
+  - npm config set registry https://axags.artifactoryonline.com/axags/api/npm/virtual-mobilemiddleware
+  - npm config set prefix /tmp/ecommerce-boilerplate
+  - npm install
+  - npm run build
+
+supervisord_app: [
+  {
+    'program': 'sails',
+    'command': 'npm run start:dist',
+    'numprocs': '1',
+    'autorestart': 'true',
+    'startretries': '3',
+    'environment': 'NODE_ENV="production",NPM_TARGET="/tmp/ecommerce-boilerplate"'
+  }
+]
+
+service_port: '3000'
+
+service_protocol: "http"

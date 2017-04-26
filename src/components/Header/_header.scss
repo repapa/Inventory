@@ -1,0 +1,46 @@
+.header {
+  border-top: none;
+  border-bottom: 2px solid $primary-color;
+
+  &-box {
+    border-bottom: 1px solid $primary-color;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  &-main {
+    border-bottom: none;
+  }
+
+  &-banner {
+    height: 100%;
+  }
+
+  &-divider {
+    border-left: 2px solid $primary-color;
+    border-right: 2px solid $primary-color;
+    height: 30px;
+    padding: 0;
+    margin-top: 20px
+  }
+
+  &-brand {
+    padding-bottom: 10px;
+  }
+
+  &-call-icon {
+    font-size: 1.5em;
+    margin-right: 5px;
+  }
+
+  &-button-group {
+    text-align: right;
+    img {
+      height: 100px;
+      width: 100px;
+      margin-left: 5px;
+      margin-right: 5px;
+      display: inline-block;
+    }
+  }
+}

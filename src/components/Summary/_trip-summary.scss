@@ -1,0 +1,12 @@
+.trip-summary {
+  .btn {
+    width: 100%;
+    text-transform: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .btn-back {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,38 @@
+.payment {
+  &-confirmation {
+    h1 {
+      font-size: 2em;
+    }
+
+    &-success {
+      .description {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  &-error {
+    .toast-notification {
+      width: 100% !important;
+      .success {
+        font-weight: 500;
+        color: '#fff';
+        background-color: $primary-color;
+      }
+
+      .error {
+        font-weight: 500;
+        color: '#fff';
+        background-color: $primary-color;
+      }
+    }
+
+    &-form {
+      > div,
+      input,
+      textarea {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

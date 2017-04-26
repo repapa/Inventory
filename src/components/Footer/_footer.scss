@@ -1,0 +1,56 @@
+.footer {
+  border-top: 2px solid $primary-color;
+  margin-top: 50px;
+  background-color: #eee;
+
+  &-title {
+    font-weight: 600;
+    color: $primary-color;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding-left: 1.3em;
+      font-size: .8em;
+
+      &:before {
+        content: "\f0da";
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: -1.3em;
+        width: 1.3em;
+      }
+    }
+  }
+
+  &-box {
+    padding-top: 15px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .btn-social {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    &-group {
+      margin-top: 20px;
+    }
+  }
+
+  &-disclaimer {
+    background-color: $primary-color;
+    text-align: center;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}

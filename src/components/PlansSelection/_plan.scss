@@ -1,0 +1,35 @@
+.plan {
+  h6 {
+    font-weight: bold;
+  }
+
+  button {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .fee {
+    font-size: 28px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .details {
+    margin-top: 12px;
+  }
+
+  .selected {
+    border: 2px solid $primary-color;
+  }
+
+  .btn-expand {
+    margin-top: 12px;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: .8em;
+    color: #ddd;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+  }
+}

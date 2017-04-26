@@ -1,0 +1,115 @@
+.my_planHeader {
+    text-align: center;
+    color: #fff;
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+}
+.my_planTitle {
+    font-size: 1.2em;
+    font-weight: 600;
+    height: 60px;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.my_planPrice {
+    font-size: 2em;
+    font-weight: 600;
+    height: 50px;
+}
+.my_planDuration {
+    margin-top: -0.6em;
+}
+
+@media (max-width: 768px) {
+    .my_planTitle {
+        font-size:small;
+    }
+}
+
+/* --- Features ------------------------- */
+
+.my_feature {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .my_feature {
+        text-align: center
+    }
+ }
+
+.my_featureRow {
+    border-bottom: 1px solid rgb(163, 163, 163);
+
+    @media (min-width: 768px) {
+      display: flex;
+
+      .row {
+        height: 100%;
+        display: flex;
+
+        .my_planFeature {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+      }
+    }
+}
+
+/* --- Plan 1 --------------------------- */
+.my_plan1 {
+    background: rgb(224,234,242);
+}
+
+.my_planHeader.my_plan1 a {
+    background: rgb(72, 109, 139);
+    color:white;
+}
+
+.my_planHeader.my_plan1 {
+    background: rgb(105, 153, 193);
+    border-bottom: thick solid rgb(105, 153, 193);
+}
+
+/* --- Plan 2 --------------------------- */
+.my_plan2 {
+    background: rgb(230,235,218);
+}
+
+.my_planHeader.my_plan2 a {
+    background: rgb(108, 131, 62);
+    color:white;
+}
+
+.my_planHeader.my_plan2 {
+    background: rgb(134, 162, 77);
+    border-bottom: thick solid rgb(134, 162, 77);
+}
+
+/* --- Plan 3 --------------------------- */
+.my_plan3 {
+    background: rgb(254,235,212);
+}
+
+.my_planHeader.my_plan3 a {
+    background: rgb(199, 127, 40);
+    color:white;
+}
+
+.my_planHeader.my_plan3 {
+    background: rgb(253, 161, 49);
+    border-bottom: thick solid rgb(253, 161, 49);
+}
+
+.my_planFeature {
+    text-align: center;
+    font-weight: 600;
+}
+
+.my_planFeature i.my_check {
+    color: green;
+}

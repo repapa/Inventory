@@ -1,0 +1,22 @@
+// override react-date-picker
+.react-date-field__calendar-icon {
+  margin: 2px 8px 0px 10px !important;
+}
+
+.react-date-field__clear-icon {
+  display: none !important;
+}
+
+.react-date-picker__month-view {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.react-date-field--theme-default {
+  border: 1px solid #aaa !important;
+}
+
+// override @axa
+.form-control {
+  padding: 7px !important;
+}

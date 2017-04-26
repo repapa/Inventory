@@ -1,0 +1,24 @@
+@import "node_modules/@axa/web-toolkit/scss/style.scss";
+@import "./_variables.scss";
+@import "./_general.scss";
+
+@import "../containers/Login/_login.scss";
+// @import "../containers/TravelInsurance/_travel-insurance.scss";
+// @import "../containers/PlanSelection/_plan-selection.scss";
+// @import "../containers/CustomerDetails/_customer-details.scss";
+// @import "../containers/Payment/_payment.scss";
+
+@import "../components/Loader/_loader.scss";
+@import "../components/Header/_header.scss";
+@import "../components/Footer/_footer.scss";
+@import "../components/ComparisionTable/_comparision-table.scss";
+@import "../components/TextField/_text-field.scss";
+@import "../components/DatePicker/_custom-date-picker.scss";
+@import "../components/ProgressBar/_progress-bar.scss";
+
+@import "../components/PlansSelection/_plan.scss";
+@import "../components/PlansSelection/_addon.scss";
+@import "../components/Summary/_trip-summary.scss";
+@import "../components/Toastr/_toastr.scss";
+
+@import "./override.scss";

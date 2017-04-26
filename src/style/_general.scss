@@ -1,0 +1,93 @@
+.axa-label {
+  label {
+    font-weight: 600;
+    color: $primary-color !important;
+  }
+}
+
+.axa-label-small {
+  label {
+    font-size: 0.8em;
+    line-height: 22px;
+    font-weight: 600;
+    font-family: $primary-font;
+    color: $primary-color !important;
+  }
+}
+
+.error-text {
+  color: $secondary-color;
+  font-family: $primary-font;
+  transition: $cubic-bezier-transition;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 5px;
+  bottom: 15px;
+}
+
+.background-banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  .img-lg {
+    min-width: 100%;
+    left: 0;
+  }
+
+  .img-sm {
+    right: 0;
+    top: 0;
+    position: absolute;
+  }
+
+  &-title {
+    color: $primary-color;
+    position: absolute;
+    right: 5%;
+    font-size: 2em;
+    z-index: 3;
+    top: 57%;
+    line-height: 1.2em;
+    text-align: right;
+    font-weight: 700;
+  }
+}
+
+.modal-container {
+  position: relative;
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute;
+}
+
+// radio button
+// input[type='radio'].icon-radio{ margin-right: 10px }
+// input[type='radio'].icon-radio+label { font-weight: 400; margin-bottom: 0; cursor: pointer; }
+input[type='radio'].icon-radio{display:none}
+input[type='radio'].icon-radio+label {font-weight: 400; margin-bottom: 0; cursor: pointer;}
+input[type='radio'].icon-radio+label .unchecked{display:inline; margin-right: 3px; font-size: 1.5em;}
+input[type='radio'].icon-radio+label .checked{display:none}
+input[type='radio']:checked.icon-radio{display:none}
+input[type='radio']:checked.icon-radio+label .unchecked{display:none}
+input[type='radio']:checked.icon-radio+label .checked{display:inline; margin-right: 3px; font-size: 1.5em;}
+
+.transition {
+  &-enter {
+    opacity: 0.01;
+
+    &-active {
+      opacity: 1;
+      transition: opacity 500ms ease-in;
+    }
+  }
+
+  &-leave {
+    opacity: 1;
+
+    &-active {
+      opacity: 0.01;
+      transition: opacity 300ms ease-in;
+    }
+  }
+}

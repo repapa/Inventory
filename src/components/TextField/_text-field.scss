@@ -1,0 +1,9 @@
+.text-field {
+  &-label {
+    font-size: 0.8em;
+    line-height: 22px;
+    font-weight: 600;
+    font-family: $primary-font;
+    color: $primary-color !important;
+  }
+}
