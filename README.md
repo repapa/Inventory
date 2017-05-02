@@ -1,9 +1,10 @@
-# ecommerce-boilerplate
+# Inventory
+- Team collaboration to study new technologies like React-Redux.
 
 ## Requirements:
-- Tools: text editor like Sublime Text
-- NodeJS v6.2.2
-- Npm v3.10.8
+- Tools: text editor like Visual Studio Code
+- NodeJS v6.2.2 or higher
+- Npm v3.10.8 or higher
 
 ## Project stup:
 

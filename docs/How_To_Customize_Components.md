@@ -10,12 +10,9 @@ How To Customize Components
 Some examples:
 
 - Containers:
-	- TravelInsurance
-	- CustomerDetails
+	- Login
 - Components:
-	- Region
-	- NumberOfAdult
-	- ArrivalDate
+	- *For update
 
 ### Where to edit?
 - Style: src/style/_variables.scss
