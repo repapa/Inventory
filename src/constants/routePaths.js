@@ -9,5 +9,7 @@ export default {
   PAYMENT_CONFIRMATION: '/payment-confirmation/',
   PAYMENT_CONFIRMATION_WITH_PARAMS: '/payment-confirmation/:orderReference',
   RETRIEVE_QUOTE: '/retrieve-quote/:quote',
-  NOT_FOUND: '*'
+  NOT_FOUND: '*',
+  USER_LIST: '/users',
+  SIGN_UP: '/sign-up'
 };
