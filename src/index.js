@@ -10,7 +10,7 @@ import configureStore from './store/configureStore';
 import routes from './routes.js';
 require('./favicon.ico');
 
-import { updateContent } from './actions/contentActions';
+// import { updateContent } from './actions/contentActions';
 import { loadLocalization } from './actions/languageActions';
 
 // import lib css
@@ -23,7 +23,7 @@ import './style/_global.scss';
 const store = configureStore();
 
 // Load initial data
-store.dispatch(updateContent());
+// store.dispatch(updateContent());
 // load localization
 syncTranslationWithStore(store);
 store.dispatch(loadLocalization());

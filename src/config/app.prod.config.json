@@ -1,6 +1,6 @@
 {
   "apiUrl": "",
   "test": true,
-  "mwUrl": "http://0.0.0.0:3002/api",
+  "beUrl": "http://0.0.0.0:3002/api",
   "entity": "ID"
 }

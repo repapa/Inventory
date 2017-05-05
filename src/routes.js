@@ -8,6 +8,8 @@ import App from './components/App.js';
 // containers
 // import TravelInsurancePage from './containers/TravelInsurance/TravelInsurancePage';
 import LoginPage from './containers/Login/LoginPage';
+import TestPage from './containers/Login/TestPage';
+import SignupPage from './containers/Signup/SignupPage';
 // import PlanSelectionPage from './containers/PlanSelection/PlanSelectionPage';
 // import CustomerDetailsPage from './containers/CustomerDetails/CustomerDetailsPage';
 // import PaymentDetailsPage from './containers/Payment/PaymentDetailsPage';
@@ -20,6 +22,8 @@ export default (
   <Route>
     <Route path={routePaths.INDEX} component={App}>
       <IndexRoute component={LoginPage} />
+      <Route path={routePaths.USER_LIST} component={TestPage}/>
+      <Route path={routePaths.SIGN_UP} component={SignupPage}/>
       {/*<Route path={routePaths.TRAVEL_INSURANCE} component={TravelInsurancePage}/>
       <Route path={routePaths.PLAN_SELECTION} component={PlanSelectionPage}/>
       <Route path={routePaths.CUSTOMER_DETAILS} component={CustomerDetailsPage}/>
