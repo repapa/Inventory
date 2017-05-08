@@ -1,7 +1,7 @@
 {
-  "name": "axa-ecommerce-frontend",
+  "name": "Inventory",
   "version": "0.0.1",
-  "description": "Ecommerce Frontend Starter Kit",
+  "description": "Frontend Starter Kit",
   "engines": {
     "npm": ">=3"
   },
@@ -26,10 +26,9 @@
     "open:cover": "npm run test:cover && open coverage/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js"
   },
-  "author": "AXA",
+  "author": "Rey-An Papa",
   "license": "MIT",
   "dependencies": {
-    "@axa/web-toolkit": "1.0.0-alpha.7",
     "axios": "0.15.2",
     "compression": "1.6.2",
     "express": "4.14.0",
