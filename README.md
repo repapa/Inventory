@@ -2,11 +2,9 @@
 - Team collaboration to study new technologies like React-Redux.
 
 ## Requirements:
-- Tools: text editor like Visual Studio Code
-- NodeJS v6.2.2 or higher
-- Npm v3.10.8 or higher
+- Follow our [Setup Guide](https://github.com/repapa/Inventory/blob/master/docs/Setup_Guide.md)
 
-## Project stup:
+## Project setup:
 
 Once all requirements is setup, run these command to setup project depedences:
 
