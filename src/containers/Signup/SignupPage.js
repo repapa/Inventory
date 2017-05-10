@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import UserForm from '../../components/UserForm/UserForm';
 
 class SignUpPage extends Component {
-  render(){
+
+  _onSubmit(e) {
+    e.preventDefault();
+    alert('testing _onSubmit');
+  }
+
+  render() {
     return (
-      <div>
-        Welcome to Signup Page!
-      </div>
+      <UserForm handleSubmit={this._onSubmit.bind(this)}/>
     );
   }
 }

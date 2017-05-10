@@ -51,6 +51,7 @@
     "react-router-redux": "4.0.6",
     "react-select": "1.0.0-rc.2",
     "redux": "3.6.0",
+    "redux-form": "6.7.0",
     "redux-logger": "2.7.4",
     "redux-mock-store": "1.2.1",
     "redux-thunk": "2.1.0",
@@ -120,7 +121,5 @@
     "type": "git",
     "url": ""
   },
-  "pre-commit": [
-  
-  ]
+  "pre-commit": []
 }

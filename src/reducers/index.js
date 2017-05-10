@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
+import { reducer as formReducer } from 'redux-form';
 
 // import quoteReducer from './quoteReducer';
 // import profileReducer from './profileReducer';
@@ -19,7 +20,8 @@ import { routerReducer } from 'react-router-redux';
 // import credentialReducer from './credentialReducer';
 
 const rootReducer = combineReducers({
-  routing: routerReducer
+  routing: routerReducer,
+  form: formReducer
 });
 
 export default rootReducer;
