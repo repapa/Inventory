@@ -1,6 +1,9 @@
-import React, { Component } from 'react';
-import UserForm from '../../components/UserForm/UserForm';
+import React, { Component, PropTypes } from 'react';
+// import UserForm from '../../components/UserForm/UserForm';
 import SignUpForm from '../../components/SignUpForm/SignUpForm';
+import { signUpRequest } from '../../actions/signUpActions';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 
 class SignUpPage extends Component {
 
@@ -10,15 +13,25 @@ class SignUpPage extends Component {
   }
 
   render() {
+    const { signUpRequest } = this.props;
     return (
-      // <UserForm handleSubmit={this._onSubmit.bind(this)}/>
       <div className="row">
         <div className="col-md-4 col-md-offset-4">
-          <SignUpForm />
+          <SignUpForm signUpRequest={signUpRequest}/>
         </div>
       </div>
     );
   }
 }
 
-export default SignUpPage;
+SignUpPage.propTypes = {
+  signUpRequest: PropTypes.func.isRequired
+};
+
+function mapDispatchToProps(dispatch){
+  return bindActionCreators({
+    signUpRequest
+  },dispatch);
+}
+
+export default connect(mapDispatchToProps)(SignUpPage);
