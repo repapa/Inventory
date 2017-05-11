@@ -21,7 +21,7 @@ import routePaths from './constants/routePaths';
 export default (
   <Route>
     <Route path={routePaths.INDEX} component={App}>
-      <IndexRoute component={LoginPage} />
+      <IndexRoute component={SignupPage} />
       <Route path={routePaths.USER_LIST} component={TestPage}/>
       <Route path={routePaths.SIGN_UP} component={SignupPage}/>
       {/*<Route path={routePaths.TRAVEL_INSURANCE} component={TravelInsurancePage}/>
