@@ -7,11 +7,6 @@ import { bindActionCreators } from 'redux';
 
 class SignUpPage extends Component {
 
-  _onSubmit(e) {
-    e.preventDefault();
-    alert('testing _onSubmit');
-  }
-
   render() {
     const { signUpRequest } = this.props;
     return (
@@ -28,10 +23,10 @@ SignUpPage.propTypes = {
   signUpRequest: PropTypes.func.isRequired
 };
 
-function mapDispatchToProps(dispatch){
+const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({
     signUpRequest
-  },dispatch);
-}
+  }, dispatch);
+};
 
-export default connect(mapDispatchToProps)(SignUpPage);
+export default connect(null, mapDispatchToProps)(SignUpPage);
